@@ -28,7 +28,7 @@
   "systemd": {
     "units": [
       {
-        "contents": "[Unit]\nDescription=Example Service\nAfter=network.target\n\n[Service]\nExecStart=/usr/bin/echo Hello, Fed>
+        "contents": "[Unit]\nDescription=Example Service\nAfter=network.target\n\n[Service]\nExecStart=/usr/bin/echo Hello, Fedora CoreOS!\nRestart=always\n\n[Install]\nWantedBy=multi-user.target",
         "enabled": true,
         "name": "example.service"
       }
